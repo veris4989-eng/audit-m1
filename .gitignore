@@ -1,0 +1,50 @@
+# =====================================================================
+#  .gitignore — Poste d'auditeur M1
+#  Empêche tout secret / loot / donnée de mission de partir sur GitHub.
+#  RÈGLE D'OR : un secret committé une seule fois est compromis pour
+#  toujours (il reste dans l'historique). On PRÉVIENT, on ne guérit pas.
+# =====================================================================
+
+# --- Secrets / identifiants (le plus important) ---
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.env
+.env.*
+credentials*
+creds*
+secrets*
+*.ovpn
+
+# --- Loot / données de mission (ne sortent jamais du poste) ---
+loot/
+dumps/
+captures/
+*.pcap
+*.ntds
+hashes.txt
+*.hash
+*.kirbi
+
+# --- Rapports contenant des données sensibles ---
+reports/*/private/
+*-CONFIDENTIEL*
+
+# --- Gros fichiers (installer via script, pas via git) ---
+wordlists/*.txt
+*.iso
+*.7z
+venv/
+.venv/
+__pycache__/
+
+# --- Outils téléchargés (récupérés via install.sh) ---
+tools/
+
+# --- OS / éditeurs ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
