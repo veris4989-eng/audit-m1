@@ -1,0 +1,15 @@
+# Nmap 7.95 scan initiated Tue Sep 29 11:06:38 2026 as: nmap -p- -v -oN recon/nmap-ports.txt 172.16.34.35
+Nmap scan report for 172.16.34.35
+Host is up (0.000055s latency).
+Not shown: 65529 closed tcp ports (reset)
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+8080/tcp open  http-proxy
+MAC Address: BC:24:11:EB:6B:62 (Proxmox Server Solutions GmbH)
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Tue Sep 29 11:06:39 2026 -- 1 IP address (1 host up) scanned in 1.10 seconds
