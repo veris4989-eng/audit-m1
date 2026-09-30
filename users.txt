@@ -1,0 +1,16 @@
+Administrator
+Guest
+krbtgt
+a.bernard
+m.thomas
+c.petit
+l.robert
+e.richard
+n.moreau
+j.simon
+t.laurent
+s.michel
+h.garcia
+p.durand
+s.leroy
+svc-sql
